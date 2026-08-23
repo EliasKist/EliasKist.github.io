@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DsSync</title>
+    <base href="/" />
+    <meta name="description" content="Save-Synchronisation für Nintendo DS, GBA und 3DS über deinen eigenen Cloud-Speicher." />
+    <meta name="theme-color" content="#1c6b64" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#171c24" media="(prefers-color-scheme: dark)" />
+    <link href="_framework/dotnet.v2v44pz0j5.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-Vy5ag9wiGlkf6NtU2ipur97imVSX3gf54gu3h/qKlt8=" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+    <script type="importmap">{
+  "imports": {
+    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.w3qd1tpl0e.js",
+    "./_framework/dotnet.native.js": "./_framework/dotnet.native.puryxhmhq9.js",
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.web2r9gqbh.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.v2v44pz0j5.js"
+  },
+  "scopes": {},
+  "integrity": {
+    "./_framework/blazor.webassembly.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
+    "./_framework/blazor.webassembly.w3qd1tpl0e.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
+    "./_framework/dotnet.js": "sha256-Vy5ag9wiGlkf6NtU2ipur97imVSX3gf54gu3h/qKlt8=",
+    "./_framework/dotnet.native.js": "sha256-gQbHHzCnWx8iDOC65EKbql7bEltJkfao7lmkAbIRajw=",
+    "./_framework/dotnet.native.puryxhmhq9.js": "sha256-gQbHHzCnWx8iDOC65EKbql7bEltJkfao7lmkAbIRajw=",
+    "./_framework/dotnet.runtime.js": "sha256-SOUHEQ3FhDAibBSR2u90NWZpoBjPuWRmH0BAATUlhJU=",
+    "./_framework/dotnet.runtime.web2r9gqbh.js": "sha256-SOUHEQ3FhDAibBSR2u90NWZpoBjPuWRmH0BAATUlhJU=",
+    "./_framework/dotnet.v2v44pz0j5.js": "sha256-Vy5ag9wiGlkf6NtU2ipur97imVSX3gf54gu3h/qKlt8="
+  }
+}</script>
+    <!-- Google Identity Services issues the Drive access token in the browser. It is the only
+         external script; without it DsSync can still start, only the connection fails. -->
+    <script src="https://accounts.google.com/gsi/client" async></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="app-loading" role="status">
+            <p>DsSync wird geladen …</p>
+        </div>
+    </div>
+
+    <div id="blazor-error-ui">
+        Es ist ein unerwarteter Fehler aufgetreten.
+        <a href="." class="reload">Neu laden</a>
+        <span class="dismiss">🗙</span>
+    </div>
+    <script src="_framework/blazor.webassembly.w3qd1tpl0e.js"></script>
+    <script>
+        // The service worker only caches the application shell. Registering it is what makes the
+        // application installable. A refused registration - private browsing, a policy, or an
+        // embedded browser - is not an application failure, so it is swallowed instead of surfacing
+        // as an unhandled rejection.
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js').catch(() => { });
+        }
+    </script>
+</body>
+
+</html>
