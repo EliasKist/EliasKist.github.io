@@ -388,6 +388,10 @@ a {
     gap: var(--space-xs);
 }
 
+.table-value {
+    min-width: 0;
+}
+
 .button-small {
     min-height: 2.25rem;
     padding: 0 var(--space-s);
