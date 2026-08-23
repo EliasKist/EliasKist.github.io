@@ -5,6 +5,7 @@
 // produce a file that looks valid.
 
 const transfers = new Map();
+const preparedShares = new Map();
 let nextTransferId = 1;
 
 export function open() {
@@ -27,13 +28,56 @@ export function discard(transferId) {
 }
 
 export function save(transferId, fileName, mimeType) {
+    return offer(transferId, fileName, mimeType, false).sizeBytes;
+}
+
+export function offer(transferId, fileName, mimeType, preferNativeShare) {
     const parts = transfers.get(transferId);
     if (!parts) {
         throw new Error("invalid-handle");
     }
 
     transfers.delete(transferId);
-    return saveBlob(new Blob(parts, { type: mimeType || "application/octet-stream" }), fileName);
+    const blob = new Blob(parts, { type: mimeType || "application/octet-stream" });
+    if (preferNativeShare && supportsFileShare(blob, fileName)) {
+        preparedShares.set(transferId, { blob, fileName });
+        return {
+            disposition: 1,
+            shareHandle: transferId,
+            sizeBytes: blob.size
+        };
+    }
+
+    saveBlob(blob, fileName);
+    return {
+        disposition: 0,
+        shareHandle: null,
+        sizeBytes: blob.size
+    };
+}
+
+export async function share(shareHandle) {
+    const prepared = preparedShares.get(shareHandle);
+    if (!prepared) {
+        throw new Error("invalid-share-handle");
+    }
+
+    const file = createFile(prepared.blob, prepared.fileName);
+    try {
+        await navigator.share({ files: [file] });
+        preparedShares.delete(shareHandle);
+        return true;
+    } catch (error) {
+        if (error instanceof DOMException && error.name === "AbortError") {
+            return false;
+        }
+
+        throw error;
+    }
+}
+
+export function discardShare(shareHandle) {
+    preparedShares.delete(shareHandle);
 }
 
 export function saveText(fileName, text) {
@@ -57,4 +101,19 @@ function saveBlob(blob, fileName) {
     }
 
     return blob.size;
+}
+
+function supportsFileShare(blob, fileName) {
+    if (typeof navigator.share !== "function" || typeof navigator.canShare !== "function") {
+        return false;
+    }
+
+    return navigator.canShare({ files: [createFile(blob, fileName)] });
+}
+
+function createFile(blob, fileName) {
+    return new File([blob], fileName, {
+        type: blob.type || "application/octet-stream",
+        lastModified: Date.now()
+    });
 }
