@@ -1,4 +1,4 @@
-/* Manifest version: dnZH6+a0 */
+/* Manifest version: P3woIBtn */
 // Production service worker.
 //
 // It caches the application shell - the files that were published with this build - so DsSync can

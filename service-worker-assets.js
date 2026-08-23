@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "dnZH6+a0",
+  "version": "P3woIBtn",
   "assets": [
     {
       "hash": "sha256-PBgtswzuCq1uzZI/rO2CR94cLeoUFgGufc5xy/z4WWo=",
@@ -14,16 +14,16 @@ self.assetsManifest = {
       "url": "_framework/DsSync.Authentication.Google.Browser.x8pishtt63.wasm"
     },
     {
-      "hash": "sha256-B4NmjjyirN0Wp+8cFiqrVX4zvLWSWBApv2E5TthDgDM=",
-      "url": "_framework/DsSync.Core.brbmyz95cg.wasm"
+      "hash": "sha256-l0/nOXaCJFELNZN8GjNm6W50XWJ9rG35ntLVmO6pkBo=",
+      "url": "_framework/DsSync.Core.rjp1get5nh.wasm"
     },
     {
-      "hash": "sha256-h+p9c3SpQDg7STtCE2/v9P4D590SqRq1H/h5pvADfos=",
-      "url": "_framework/DsSync.Provider.GoogleDrive.zxs8mgtbcn.wasm"
+      "hash": "sha256-k3AegEwD4VweoeL1313ccO/4XrCvNn2n0QeHYQx1hiA=",
+      "url": "_framework/DsSync.Provider.GoogleDrive.rizzu5so77.wasm"
     },
     {
-      "hash": "sha256-b8kXZIUqMBLkd4qidsUL0hMUCPuMHn/GWAlYXbILyOU=",
-      "url": "_framework/DsSync.Web.9i04vvsx5g.wasm"
+      "hash": "sha256-YQpPcqF8EUnR1/Wlj13BCUEMpYO8smpESMP9BC5yvkc=",
+      "url": "_framework/DsSync.Web.zbj314gts8.wasm"
     },
     {
       "hash": "sha256-DzghowUDGZ+ainMLSIXOGKkbHTsww3KhGAaPtVCmGqI=",
@@ -846,16 +846,16 @@ self.assetsManifest = {
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
     },
     {
+      "hash": "sha256-22v3Kwfy4+hStVhR9PA7q1mMfToMtkvFRBtJJhkavc4=",
+      "url": "_framework/dotnet.bgltqg0rxv.js"
+    },
+    {
       "hash": "sha256-gQbHHzCnWx8iDOC65EKbql7bEltJkfao7lmkAbIRajw=",
       "url": "_framework/dotnet.native.puryxhmhq9.js"
     },
     {
       "hash": "sha256-pqkc+YDwRTSgmuWJlAiNJayjN0YQFu94A84NGzuA12Q=",
       "url": "_framework/dotnet.native.u31nt9bth6.wasm"
-    },
-    {
-      "hash": "sha256-KjQcVHW79wLRfptZFUDIkEsOLCw5F9aHwnd5rObHEMs=",
-      "url": "_framework/dotnet.qv21bfsfqt.js"
     },
     {
       "hash": "sha256-SOUHEQ3FhDAibBSR2u90NWZpoBjPuWRmH0BAATUlhJU=",
@@ -894,7 +894,7 @@ self.assetsManifest = {
       "url": "appsettings.json"
     },
     {
-      "hash": "sha256-IVoRozq9dPkj5hXZGLwhMOqQDjH+eN2/UVGYNhgg9Nc=",
+      "hash": "sha256-JaSlYnk3fS2GvMb3M/wkGs4LBP73k8cgLVHKaS7LT40=",
       "url": "css/app.css"
     },
     {
@@ -922,7 +922,7 @@ self.assetsManifest = {
       "url": "icons/dssync-maskable-512.png"
     },
     {
-      "hash": "sha256-YyhP+1fmijgUVZCDvOS72Qmn9/0LWdaVxlXDw/MXkak=",
+      "hash": "sha256-UL67x5U8SkXeIJHTBiAKy6sTLcuVGkrUoyd8pigRTho=",
       "url": "index.html"
     },
     {
