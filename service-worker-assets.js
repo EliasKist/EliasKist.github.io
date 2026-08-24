@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "+WTM6WOU",
+  "version": "b27JnBE+",
   "assets": [
     {
       "hash": "sha256-PBgtswzuCq1uzZI/rO2CR94cLeoUFgGufc5xy/z4WWo=",
@@ -14,16 +14,16 @@ self.assetsManifest = {
       "url": "_framework/DsSync.Authentication.Google.Browser.x8pishtt63.wasm"
     },
     {
-      "hash": "sha256-l0/nOXaCJFELNZN8GjNm6W50XWJ9rG35ntLVmO6pkBo=",
-      "url": "_framework/DsSync.Core.rjp1get5nh.wasm"
+      "hash": "sha256-YxphiPyvZHDyuovzvpolSJTaXte1zdcCPrExblkjLWA=",
+      "url": "_framework/DsSync.Core.p1y9dh0fgc.wasm"
     },
     {
-      "hash": "sha256-k3AegEwD4VweoeL1313ccO/4XrCvNn2n0QeHYQx1hiA=",
-      "url": "_framework/DsSync.Provider.GoogleDrive.rizzu5so77.wasm"
+      "hash": "sha256-7OdAnjx3cfNF1z0htdjgT2LSQSSsXzuttWhcXBzHoak=",
+      "url": "_framework/DsSync.Provider.GoogleDrive.oxj81skcvs.wasm"
     },
     {
-      "hash": "sha256-rr7iV0Gy0lrxNLNRcA8bqZF/YmTJ8UNRM2F4ID6vUzk=",
-      "url": "_framework/DsSync.Web.ys83m7ymru.wasm"
+      "hash": "sha256-GovtJJ4GDKmAdEXubpsEDDGFzohY+VvcoCs92v7g2A0=",
+      "url": "_framework/DsSync.Web.2xof51ooh7.wasm"
     },
     {
       "hash": "sha256-DzghowUDGZ+ainMLSIXOGKkbHTsww3KhGAaPtVCmGqI=",
@@ -846,8 +846,8 @@ self.assetsManifest = {
       "url": "_framework/blazor.webassembly.w3qd1tpl0e.js"
     },
     {
-      "hash": "sha256-Vi0t1RCDH0nCVbMu721rqm44A/OS4F/VzB95pGYPg6s=",
-      "url": "_framework/dotnet.asrktrowc0.js"
+      "hash": "sha256-WQ7HfED/Z/I/Pwk7VMcpfZyZTyj+sEjzY0rMl5fdUV4=",
+      "url": "_framework/dotnet.d3m6l9i5y0.js"
     },
     {
       "hash": "sha256-gQbHHzCnWx8iDOC65EKbql7bEltJkfao7lmkAbIRajw=",
@@ -922,7 +922,7 @@ self.assetsManifest = {
       "url": "icons/dssync-maskable-512.png"
     },
     {
-      "hash": "sha256-0seKcWOP/3Cl5Pld5mwLEz2k/onucMe28c9LLAF0MCM=",
+      "hash": "sha256-rA37vz+jT1dVXuu/F5sBpco4t7Zyr2Y94NMbeIZxRkA=",
       "url": "index.html"
     },
     {
